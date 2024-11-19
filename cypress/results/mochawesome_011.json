@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-19T19:41:27.745Z",
+    "end": "2024-11-19T19:41:28.944Z",
+    "duration": 1199,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "06a41fbd-cb70-498e-8db1-ec3119f05809",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.spec.js",
+      "file": "cypress\\integration\\login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f1da9513-b7a9-4846-87bf-2add8fb39f2a",
+          "title": "Login Testi",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Giriş yapabilmeli",
+              "fullTitle": "Login Testi Giriş yapabilmeli",
+              "timedOut": null,
+              "duration": 1057,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Ana sayfayı ziyaret et\ncy.visit('https://www.kidokit.com/');\ncy.xpath(\"//button[contains(@style, 'line')]\").click({\n  force: true\n});\nbeforeEach(() => {\n  // GET isteklerini engelleme\n  cy.intercept('GET', '**/*', {\n    statusCode: 200,\n    // Başarılı bir yanıt döndürüyoruz\n    body: {} // Boş bir yanıt\n  }).as('mockedGetRequest');\n});\nbeforeEach(() => {\n  // POST isteklerini engelleme\n  cy.intercept('POST', '**/*', {\n    statusCode: 200,\n    // Başarılı bir yanıt döndürüyoruz\n    body: {} // Boş bir yanıt\n  }).as('mockedPostRequest');\n});",
+              "err": {
+                "message": "CypressError: Cypress detected you registered a(n) `beforeEach` hook while a test was running (possibly a hook nested inside another hook). All hooks must be registered before a test begins executing.\n\nMove the `beforeEach` into a suite callback or the global scope.",
+                "estack": "CypressError: Cypress detected you registered a(n) `beforeEach` hook while a test was running (possibly a hook nested inside another hook). All hooks must be registered before a test begins executing.\n\nMove the `beforeEach` into a suite callback or the global scope.\n    at cypressErr (http://localhost:1313/__cypress/runner/cypress_runner.js:75898:18)\n    at Object.errByPath (http://localhost:1313/__cypress/runner/cypress_runner.js:75952:10)\n    at Suite._createHook (http://localhost:1313/__cypress/runner/cypress_runner.js:145480:76)\n    at Suite.beforeEach (http://localhost:1313/__cypress/runner/cypress_runner.js:157235:19)\n    at Suite.<computed> [as beforeEach] (http://localhost:1313/__cypress/runner/cypress_runner.js:145488:23)\n    at beforeEach (http://localhost:1313/__cypress/runner/cypress_runner.js:160669:17)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress_project/./cypress/integration/login.spec.js:9:8)",
+                "diff": null
+              },
+              "uuid": "d22de19a-2c9a-47be-82eb-4267e24d99f3",
+              "parentUUID": "f1da9513-b7a9-4846-87bf-2add8fb39f2a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d22de19a-2c9a-47be-82eb-4267e24d99f3"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1057,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

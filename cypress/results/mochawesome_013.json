@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-19T19:49:31.008Z",
+    "end": "2024-11-19T19:49:48.778Z",
+    "duration": 17770,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3c5eda08-6638-4f3a-b4cd-34e0cabbff2c",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.spec.js",
+      "file": "cypress\\integration\\login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3996e137-10ed-40cc-9d6f-783f8ded452a",
+          "title": "Login Testi",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Giriş yapabilmeli",
+              "fullTitle": "Login Testi Giriş yapabilmeli",
+              "timedOut": null,
+              "duration": 13917,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Ana sayfayı ziyaret et\ncy.visit('https://www.kidokit.com/');\n// İstediğiniz testlerin geri kalanını buraya ekleyin\n// Örneğin, giriş yapıldıktan sonra kullanıcıyı doğrulamak:\ncy.url().should('include', '/dashboard'); // Örnek doğrulama\n// XPath ile butona tıkla\ncy.xpath(\"//button[contains(@style, 'line')]\").click({\n  force: true\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://www.kidokit.com/' to include '/dashboard'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://www.kidokit.com/' to include '/dashboard'\n    at Context.eval (webpack://cypress_project/./cypress/integration/login.spec.js:9:17)",
+                "diff": null
+              },
+              "uuid": "88f02921-8b25-413e-8e0b-3f9ca316189a",
+              "parentUUID": "3996e137-10ed-40cc-9d6f-783f8ded452a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "88f02921-8b25-413e-8e0b-3f9ca316189a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 13917,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

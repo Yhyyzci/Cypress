@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-19T19:43:01.280Z",
+    "end": "2024-11-19T19:43:02.660Z",
+    "duration": 1380,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5dfc1c16-3357-412d-a4b3-13852fed5f7c",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.spec.js",
+      "file": "cypress\\integration\\login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "888dee2b-81f3-4710-afa3-24e3c753cfe0",
+          "title": "Login Testi",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Giriş yapabilmeli",
+              "fullTitle": "Login Testi Giriş yapabilmeli",
+              "timedOut": null,
+              "duration": 1301,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Ana sayfayı ziyaret et\ncy.visit('https://www.kidokit.com/');\n// XPath ile butona tıkla\ncy.xpath(\"//button[contains(@style, 'line')]\").click({\n  force: true\n});\n// İstediğiniz testlerin geri kalanını buraya ekleyin\n// Örneğin, giriş yapıldıktan sonra kullanıcıyı doğrulamak:\ncy.url().should('include', '/dashboard'); // Örnek doğrulama",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.kidokit.com/\n\nThe `content-type` of the response we received from your web server was:\n\n  > `application/json`\n\nThis was considered a failure because responses must have `content-type: 'text/html'`\n\nHowever, you can likely use `cy.request()` instead of `cy.visit()`.\n\n`cy.request()` will automatically get and set cookies and enable you to parse responses.",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://www.kidokit.com/\n\nThe `content-type` of the response we received from your web server was:\n\n  > `application/json`\n\nThis was considered a failure because responses must have `content-type: 'text/html'`\n\nHowever, you can likely use `cy.request()` instead of `cy.visit()`.\n\n`cy.request()` will automatically get and set cookies and enable you to parse responses.\n    at <unknown> (http://localhost:1430/__cypress/runner/cypress_runner.js:131434:76)\n    at visitFailedByErr (http://localhost:1430/__cypress/runner/cypress_runner.js:130849:12)\n    at <unknown> (http://localhost:1430/__cypress/runner/cypress_runner.js:131417:13)\n    at tryCatcher (http://localhost:1430/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:1430/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:1430/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:1430/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:1430/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:1430/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:1430/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:1430/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:1430/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress_project/./cypress/integration/login.spec.js:20:11)",
+                "diff": null
+              },
+              "uuid": "56e81e28-03bf-499c-9c54-91d7215be30a",
+              "parentUUID": "888dee2b-81f3-4710-afa3-24e3c753cfe0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "56e81e28-03bf-499c-9c54-91d7215be30a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1301,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

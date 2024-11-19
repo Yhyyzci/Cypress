@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-19T18:40:40.620Z",
+    "end": "2024-11-19T18:41:08.907Z",
+    "duration": 28287,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "748507ac-4444-4bd0-80b5-24055d74e22c",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.spec.js",
+      "file": "cypress\\integration\\login.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a4bd3d39-0ebe-4f18-ad8a-489fe35dfe0c",
+          "title": "Login Testi",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Giriş yapabilmeli",
+              "fullTitle": "Login Testi Giriş yapabilmeli",
+              "timedOut": null,
+              "duration": 19436,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Ana sayfayı ziyaret et\ncy.visit('https://www.kidokit.com/');\ncy.xpath(\"//button[contains(@style, 'line')]\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<button class=\"primary-button-module--primaryButton--5915e\" style=\"min-width:7.5rem;font-size:12px;line-height:28px\">Ücretsi...</button>`\n\nThis element `<button.primary-button-module--primaryButton--5915e>` is not visible because its parent `<div.ant-col.navbar-layout-module--navbarMenu--eac94.navbar-layout-module--mobileMenu--8dff7.ant-col-xs-24.css-j9bb5n>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<button class=\"primary-button-module--primaryButton--5915e\" style=\"min-width:7.5rem;font-size:12px;line-height:28px\">Ücretsi...</button>`\n\nThis element `<button.primary-button-module--primaryButton--5915e>` is not visible because its parent `<div.ant-col.navbar-layout-module--navbarMenu--eac94.navbar-layout-module--mobileMenu--8dff7.ant-col-xs-24.css-j9bb5n>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at runVisibilityCheck (https://www.kidokit.com/__cypress/runner/cypress_runner.js:144800:58)\n    at Object.isStrictlyVisible (https://www.kidokit.com/__cypress/runner/cypress_runner.js:144814:10)\n    at runAllChecks (https://www.kidokit.com/__cypress/runner/cypress_runner.js:113118:26)\n    at retryActionability (https://www.kidokit.com/__cypress/runner/cypress_runner.js:113186:16)\n    at tryCatcher (https://www.kidokit.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://www.kidokit.com/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://www.kidokit.com/__cypress/runner/cypress_runner.js:143587:68)\n    at <unknown> (https://www.kidokit.com/__cypress/runner/cypress_runner.js:143528:14)\n    at tryCatcher (https://www.kidokit.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.kidokit.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.kidokit.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.kidokit.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.kidokit.com/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://www.kidokit.com/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://www.kidokit.com/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress_project/./cypress/integration/login.spec.js:6:55)",
+                "diff": null
+              },
+              "uuid": "ed2e11aa-9033-4b66-a7b0-1a8989ee8f2d",
+              "parentUUID": "a4bd3d39-0ebe-4f18-ad8a-489fe35dfe0c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ed2e11aa-9033-4b66-a7b0-1a8989ee8f2d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 19436,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
