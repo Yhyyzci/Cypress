@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+import 'cypress-file-upload'
+
+//Login komutu
+Cypress.Commands.add('login',(usurname,password)=>{
+
+    cy.get("[data-test = 'username']").should('be.visible').type(usurname)
+
+    cy.get("[data-test = 'password']").should('be.visible').type(password)
+
+    cy.get("#login-button").click()//click
+})
