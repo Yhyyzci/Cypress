@@ -2,8 +2,8 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-
-    dashboardRun: "npx cypress run --record --key 21431916-92d8-466f-9cf3-d2f562ba4d54", // Dashboard kaydı için
+    projectId: "gesmu3",
+    dashboardRun: "npx cypress run --record --key eaa1e9b2-3b88-4b4a-9649-c4bb5ec42365", // Dashboard kaydı için
     supportFile: 'cypress/support/e2e.js', // Global ayarları ve komutları içerir
     specPattern: 'cypress/e2e/Egitim/*.spec.js', // Test dosyalarınızın bulunduğu yol
     video: true, // Testler sırasında video kaydını etkinleştirir (varsayılan olarak 'true')
@@ -23,6 +23,6 @@ module.exports = defineConfig({
   },
   env: {
     // Çevre değişkenleri tanımlayabilirsiniz
-    baseUrl: 'https://www.saucedemo.com/', // Örnek bir baseUrl
+    baseUrl: 'https://www.saucedemo.com/', // Örnek bir BaseUrl
   },
 });
