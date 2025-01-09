@@ -9,7 +9,7 @@
         });
 
 
-  it("TC001 SauceDemo sayfasina git ve basligi dogrulama",()=>{
+  it("TC001 SauceDemo sayfasina git ve basligi dogrula",()=>{
 
       cy.title().should('eq',"Swag Labs")
   })
