@@ -8,6 +8,12 @@ describe("Trendyol Home",()=>{
         cy.url().should('include', '/giris')
        // cy.get('input[name="E-posta"]').should('be.visible')
 
+        cy.get('[data-testid="email-input"]').type('yhyyzcgl@gmail.com')
+
+        cy.get('[data-testid="password-input"]').type('sdgdf4345b')
+
+        cy.get('.q-primary')
+
 
     })
 
