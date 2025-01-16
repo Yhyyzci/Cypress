@@ -26,7 +26,7 @@
 
 
 import 'cypress-file-upload'
-
+require('cypress-xpath');
 //Login komutu
 Cypress.Commands.add('login',(usurname,password)=>{
 
@@ -36,3 +36,4 @@ Cypress.Commands.add('login',(usurname,password)=>{
 
     cy.get("#login-button").click()//click
 })
+

@@ -11,8 +11,11 @@ describe("Trendyol Home",()=>{
         cy.get('[data-testid="email-input"]').type('yhyyzcgl@gmail.com')
 
         cy.get('[data-testid="password-input"]').type('sdgdf4345b')
+        
+        
+        cy.xpath("//span[contains(text(),'Şifremi Unuttum')]").click();
 
-        cy.get('.q-primary')
+
 
 
     })
