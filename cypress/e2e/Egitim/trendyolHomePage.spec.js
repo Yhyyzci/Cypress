@@ -15,7 +15,9 @@ describe("Trendyol Home",()=>{
         
         cy.xpath("//span[contains(text(),'Şifremi Unuttum')]").click();
 
+        cy.get('.ty-bg-beige').type('yhyyzcgl@gmail.com')
 
+        cy.xpath("//button[contains(text(),'Şifremi Yenile')]").click();
 
 
     })
