@@ -6,7 +6,7 @@ describe('Cyrpess URL related commands', () => {
         cy.visit('https://fineuploader.com')    
     })
 
-    it('Fineuploader protokolu verify et', () => {
+    it('Fineuploader protokolu verrify et', () => {
         cy.location('protocol').should('contain', 'https')
     })
 
