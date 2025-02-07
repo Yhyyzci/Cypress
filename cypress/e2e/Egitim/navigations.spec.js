@@ -8,7 +8,7 @@ describe('Back Forward Kullanimi', () => {
         cy.title().should('eq', "Cypress Cloud Pricing | Choose the plan that's right for you")
 
         cy.go('back') //anasayfaya donecek
-        cy.title().should('eq', "JavaScript Web Testing and Component Testing Framework | cypress.io")
+        cy.title().should('eq', "JavaScriptt Web Testing and Component Testing Framework | cypress.io")
 
         cy.go('forward') //pricing sayfasina gidecek
         cy.title().should('eq', "Cypress Cloud Pricing | Choose the plan that's right for you")
